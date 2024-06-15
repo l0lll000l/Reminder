@@ -19,14 +19,14 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final player = AudioPlayer();
-
+  bool _eventTriggered = false;
   DateTime now = DateTime.now();
   late DateTime _currentDateTime;
   late Timer _timer;
   @override
   void initState() {
     _currentDateTime = DateTime.now();
-    _timer = Timer.periodic(Duration(minutes: 1), _updateDateTime);
+    _timer = Timer.periodic(Duration(seconds: 4), _updateDateTime);
     super.initState();
   }
 
@@ -81,8 +81,11 @@ class _HomeState extends State<Home> {
 
                   if (formattedTime == timeString &&
                       now.weekday == daysMap[data.day.toString()]) {
-                    sendNotification(data);
-                    playSound();
+                    if (!_eventTriggered) {
+                      sendNotification(data);
+                      playSound();
+                      _eventTriggered = true;
+                    }
                   }
 
                   //--------------------------------------------------------------------------------------------------
