@@ -1,5 +1,3 @@
 ![image](https://github.com/l0lll000l/Reminder/assets/114205296/8e3c5872-9c97-4098-9166-9d76c11b1b0e)
 ![image](https://github.com/l0lll000l/Reminder/assets/114205296/c91ae389-6049-4f15-913b-32268a8b5b08)
-![Screenshot_1718448107](https://github.com/l0lll000l/Reminder/assets/114205296/aeec2f20-8c01-4265-b7a5-0e479eb5c005)
-![Screenshot_1718448136](https://github.com/l0lll000l/Reminder/assets/114205296/3ab8d5b6-24c9-49b3-abfe-fcee24e12c6e)
-![Screenshot_1718448143](https://github.com/l0lll000l/Reminder/assets/114205296/ee028ab1-bba1-4c86-a90e-3f23647550a5)
+![image](https://github.com/l0lll000l/Reminder/assets/114205296/85091591-a656-4d46-98e5-483800aa032a)
