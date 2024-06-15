@@ -23,10 +23,17 @@ class _HomeState extends State<Home> {
   DateTime now = DateTime.now();
   late DateTime _currentDateTime;
   late Timer _timer;
+  late Timer _boolEvent;
   @override
   void initState() {
     _currentDateTime = DateTime.now();
     _timer = Timer.periodic(Duration(seconds: 4), _updateDateTime);
+    _boolEvent = Timer.periodic(Duration(minutes: 1), (timer) {
+      setState(() {
+        _eventTriggered = false;
+      });
+    });
+
     super.initState();
   }
 
@@ -63,7 +70,7 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           backgroundColor: korange,
           centerTitle: true,
-          title: Text('Reminder App'),
+          title: Text('Reminder'),
         ),
         body: ValueListenableBuilder(
           valueListenable: reminderNotifier,

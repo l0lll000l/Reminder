@@ -188,7 +188,6 @@ class _AddReminderState extends State<AddReminder> {
     }
     final _reminder = ReminderModel(activity: _activity, day: _day, time: time);
     addreminder(_reminder);
-    Navigator.of(context).pop();
   }
 
   //--------------------------------------------------------------------------time formating
@@ -197,7 +196,7 @@ class _AddReminderState extends State<AddReminder> {
     final dateTime = DateTime(
         now.year, now.month, now.day, timeOfDay.hour, timeOfDay.minute);
 
-    final format = DateFormat('hh:mm a'); // Format as "hh:mm AM/PM"
+    final format = DateFormat('hh:mm a');
     return format.format(dateTime);
   }
 }

@@ -7,6 +7,7 @@ import 'package:flutter_application_18/model/reminderModel.dart';
 import 'package:hive_flutter/adapters.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   if (!Hive.isAdapterRegistered(ReminderModelAdapter().typeId)) {
     Hive.registerAdapter(ReminderModelAdapter());
